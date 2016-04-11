@@ -1,139 +1,179 @@
+
+<!-- Résumé :
+La balise est l'élément de base du langage HTML. Le langage HTML permet de décrire l'aspect visuel et le contenu d'une page Web
+
+Chaque balise s'ouvre et ce ferme avec des chevrons <> </>.
+A l'intérieur de ces chevrons, ont y ajoutes des balises:
+
+<body> </body> :  contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute.
+
+Un doctype (contraction de l'anglais document type, littéralement « type de document ») est une instruction obligatoire au début des documents :
+<!DOCTYPE html>
+
+<html> </html> : est une balise d'ouverture et </html> une balise de fermeture de la page html.
+
+<h1> </h1>, <h2> </h2>, <h3> </h3>... <h6> </h6>,  : Sert a ajouté un titre. Sachant que h1 est le titre le plus grand et h6 le plus petit
+
+<p> </p> : Sert a ajouté un paragraphe
+
+<br> : Sert a faire un saut a la ligne
+
+<img src= '' ... ''/> : Permet d'ajouté une image
+
+<ul> </ul> représente une liste d'éléments non ordonnés
+
+<ol> </ol> représente une liste d'éléments ordonnés
+
+<li> </li> :  LI correspond à une ligne d'une liste non ordonnée ou ordonnée
+
+<div> </div> :  La balise <div> définit une division ou une section, appelé aussi calque, dans un document HTML. La balise <div> est utilisée pour regrouper des éléments sous forme de bloc et ainsi pouvoir les formater en CSS.
+
+<video> </video> : Cette balise sert à inserer une vidéo.
+
+-->
+
+
+
 <!DOCTYPE html>
 <html>
+<!--  -->
+
+<head>
+  <meta charset="utf-8">
   <!--  -->
-  <head>
-    <meta charset="utf-8">
+  <title></title>
+  <!--   -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<!--  -->
+
+<body>
+  <div class="container-fluid">
     <!--  -->
-    <title></title>
-    <!--   -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <!--  -->
-  <body>
-    <div class="container-fluid">
+    <header class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-3"></div>
       <!--  -->
-      <header class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-3"></div>
-        <!--  -->
-        <div class="col-xs-push-2 col-xs-5">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Yo !</a>
-              <ul class="nav navbar-nav ">
-                <li>Section1</li>
-                <li>Section2</li>
-                <li>Section3</li>
-              </ul>
-            </div>
-          </nav>
+      <div class="col-xs-push-2 col-xs-5">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yo !</a>
+            <ul class="nav navbar-nav ">
+              <li>Section1</li>
+              <li>Section2</li>
+              <li>Section3</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="container-fluid">
+    <!--  -->
+    <main>
+      <section class="home">
+        <div class="row">
+          <div class="col-xs-push-4 col-xs-4">M</div>
         </div>
-      </header>
-    </div>
-    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-push-5 col-xs-2">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
       <!--  -->
-      <main>
-        <section class="home">
-          <div class="row">
-            <div class="col-xs-push-4 col-xs-4">M</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-push-5 col-xs-2">
-              <img src="" alt="" />
-            </div>
-          </div>
-        </section>
-        <!--  -->
-        <section class="one">
-          <div class="row">
-            <div class="col-xs-6">
-              <div class="row">
-                <!--  -->
-                <hgroup>
-                  <h1 class="col-xs-12"></h1>
-                  <h2 class="col-xs-12"></h2>
-                  <h3 class="col-xs-12"></h3>
-                  <h4 class="col-xs-12"></h4>
-                  <h5 class="col-xs-12"></h5>
-                  <h6 class="col-xs-12"></h6>
-                </hgroup>
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <h3 class="col-xs-12"></h3>
-                <!--  -->
-                <ul class="col-xs-6">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <ol class="col-xs-6">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="two">
-          <div class="row">
-            <h3 class="col-xs-12"></h3>
-            <!--  -->
-            <div class="col-xs-3">
-              <img src="" alt="">
-            </div>
-            <div class="col-xs-3">
-              <img src="" alt="">
-            </div>
-            <div class="col-xs-3">
-              <img src="" alt="">
-            </div>
-            <div class="col-xs-3">
-              <img src="" alt="">
-            </div>
-            <h3 class="col-xs-12"></h3>
-            <!--  -->
-            <div class="col-xs-4">
-              <a href=""></a>
-            </div>
-            <div class="col-xs-4">
-              <a href=""></a>
-            </div>
-            <div class="col-xs-4">
-              <a href=""></a>
-            </div>
-          </div>
-        </section>
-        <section class="three">
-          <div class="row">
-            <div class="col-xs-12"></div>
-            <div class="col-xs-push-2 col-xs-10">
+      <section class="one">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="row">
               <!--  -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/kL3Sj9CfcWE" frameborder="0" allowfullscreen></iframe>
+              <hgroup>
+                <h1 class="col-xs-12"></h1>
+                <h2 class="col-xs-12"></h2>
+                <h3 class="col-xs-12"></h3>
+                <h4 class="col-xs-12"></h4>
+                <h5 class="col-xs-12"></h5>
+                <h6 class="col-xs-12"></h6>
+              </hgroup>
             </div>
           </div>
-        </section>
-      </main>
-      <!--  -->
-      <footer class="row">
-        <div class="col-xs-push-1 col-xs-1"></div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-push-2 col-xs-4"></div>
-      </footer>
-    </div>
-
-
+          <div class="col-xs-6">
+            <div class="row">
+              <div class="col-xs-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <h3 class="col-xs-12"></h3>
+              <!--  -->
+              <ul class="col-xs-6">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ol class="col-xs-6">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="two">
+        <div class="row">
+          <h3 class="col-xs-12"></h3>
+          <!--  -->
+          <div class="col-xs-3">
+            <img src="" alt="">
+          </div>
+          <div class="col-xs-3">
+            <img src="" alt="">
+          </div>
+          <div class="col-xs-3">
+            <img src="" alt="">
+          </div>
+          <div class="col-xs-3">
+            <img src="" alt="">
+          </div>
+          <h3 class="col-xs-12"></h3>
+          <!--  -->
+          <div class="col-xs-4">
+            <a href=""></a>
+          </div>
+          <div class="col-xs-4">
+            <a href=""></a>
+          </div>
+          <div class="col-xs-4">
+            <a href=""></a>
+          </div>
+        </div>
+      </section>
+      <section class="three">
+        <div class="row">
+          <div class="col-xs-12"></div>
+          <div class="col-xs-push-2 col-xs-10">
+            <!--  -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kL3Sj9CfcWE" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
     <!--  -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
-    <script type="text/javascript" src="js/script.js" ></script>
-  </body>
+    <footer class="row">
+      <div class="col-xs-push-1 col-xs-1"></div>
+      <div class="col-xs-1"></div>
+      <div class="col-xs-1"></div>
+      <div class="col-xs-push-2 col-xs-4"></div>
+    </footer>
+  </div>
+
+
+  <!--  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
