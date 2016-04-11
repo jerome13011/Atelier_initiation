@@ -1,4 +1,3 @@
-
 <!-- Résumé :
 La balise est l'élément de base du langage HTML. Le langage HTML permet de décrire l'aspect visuel et le contenu d'une page Web
 
@@ -29,32 +28,44 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
 <div> </div> :  La balise <div> définit une division ou une section, appelé aussi calque, dans un document HTML. La balise <div> est utilisée pour regrouper des éléments sous forme de bloc et ainsi pouvoir les formater en CSS.
 
 <video> </video> : Cette balise sert à inserer une vidéo.
-
 -->
 
 
 
 <!DOCTYPE html>
 <html>
-<!--  -->
+<!-- debut d'écriture du script html -->
 
 <head>
   <meta charset="utf-8">
-  <!--  -->
+  <!-- permet théoriquement d'encoder toutes les langues, du français au japonais en passant par l'arabe. -->
+
   <title></title>
-  <!--   -->
+  <!-- permet d’ajouter une description d'une page affichée, ainsi que des mots-clés pour lesquels on souhaite optimiser une page. -->
+
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<!--  -->
+<!-- initialisation de page, permet d'utiliser les regles de bootstrap -->
+<!-- Permet de récuperer le style css -->
 
 <body>
+<!-- permet d'afficher le contenu sur la page Web -->
+
   <div class="container-fluid">
-    <!--  -->
+    <!-- permet d'utiliser toute la largeur de la page -->
+
     <header class="row">
+      <!-- mis en plage du haut de page -->
+
       <div class="col-xs-2"></div>
       <div class="col-xs-3"></div>
-      <!--  -->
+      <!-- les classes row permet de quadrillé les classes en dessous en 12 colonnes -->
+      <!-- les classes col se place juste en dessous des classes row. Il éxiste plusieurs classes de col selon la résolution de l'écran:
+       col-xs pour petite resolution, col-md pour médium et col-lg pour grande résolution.
+       Par exemple, trois colonnes égales utiliseraient trois .col-xs-4 ou col-md-4 ou col-lg-4 .
+      -->
+
       <div class="col-xs-push-2 col-xs-5">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -64,14 +75,19 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
               <li>Section2</li>
               <li>Section3</li>
             </ul>
+            <!-- Sert a ajouter une liste entre chaque <li> </li> -->
+
           </div>
         </nav>
       </div>
     </header>
+
   </div>
   <div class="container-fluid">
-    <!--  -->
+
     <main>
+      <!-- Ajout du contenu entre les balises <main> </main> -->
+
       <section class="home">
         <div class="row">
           <div class="col-xs-push-4 col-xs-4">M</div>
@@ -79,16 +95,20 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
         <div class="row">
           <div class="col-xs-push-5 col-xs-2">
             <img src="" alt="" />
+            <!-- Ajout du lien d'une image entre les "" de scr  ex: src="http ..."-->
+
           </div>
         </div>
       </section>
-      <!--  -->
       <section class="one">
+        <!-- ajout du contenu entre les balises <section> </section> -->
+
         <div class="row">
           <div class="col-xs-6">
             <div class="row">
-              <!--  -->
               <hgroup>
+                <!-- L’élément <hgroup> permet de regrouper un ensemble de balises <h1> à <h6>, quand un titre a plusieurs niveaux (sous-titres). -->
+
                 <h1 class="col-xs-12"></h1>
                 <h2 class="col-xs-12"></h2>
                 <h3 class="col-xs-12"></h3>
@@ -105,7 +125,8 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
                   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <h3 class="col-xs-12"></h3>
-              <!--  -->
+              <!-- Affiche un titre de taille h3 -->
+
               <ul class="col-xs-6">
                 <li></li>
                 <li></li>
@@ -122,10 +143,14 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
           </div>
         </div>
       </section>
+
       <section class="two">
+        <!-- ajout de contenu entre les balises <section> </section> -->
+
         <div class="row">
           <h3 class="col-xs-12"></h3>
-          <!--  -->
+          <!-- ajout d'un titre de taille h3 prennant toute la largeur -->
+          
           <div class="col-xs-3">
             <img src="" alt="">
           </div>
@@ -138,10 +163,15 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
           <div class="col-xs-3">
             <img src="" alt="">
           </div>
+          <!-- Chaques images prend une largeur de 3 colonnes sur 12 -->
+
           <h3 class="col-xs-12"></h3>
-          <!--  -->
           <div class="col-xs-4">
             <a href=""></a>
+            <!-- la balise <a> permet de faire un lien.
+           Ont ajoutes le lien entre les "" de href -->
+
+
           </div>
           <div class="col-xs-4">
             <a href=""></a>
@@ -155,25 +185,34 @@ Un doctype (contraction de l'anglais document type, littéralement « type de do
         <div class="row">
           <div class="col-xs-12"></div>
           <div class="col-xs-push-2 col-xs-10">
-            <!--  -->
+            <!-- la classe col-xs-push sert a pousser cette classe vers le coté droit de l'écran pour les petites résolutions "xs" -->
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/kL3Sj9CfcWE" frameborder="0" allowfullscreen></iframe>
+            <!-- la balise <iframe> </iframe> permet d'ajouter une vidéo. Ont y ajoute le lien entre les "" de src -->
+
           </div>
         </div>
       </section>
     </main>
-    <!--  -->
+    <!-- Fin du contenu entre les balises <main> </main> -->
+
     <footer class="row">
       <div class="col-xs-push-1 col-xs-1"></div>
       <div class="col-xs-1"></div>
       <div class="col-xs-1"></div>
       <div class="col-xs-push-2 col-xs-4"></div>
     </footer>
+    <!-- Mis en page du bas de page -->
+
   </div>
 
 
-  <!--  -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <!-- Ces liens permet de recupérer les scripts javascript pour l'utlisé sur notre page Web -->
+
 </body>
+<!-- Fin du contenu sur la page Web -->
 
 </html>
+<!-- Fin du script html -->
